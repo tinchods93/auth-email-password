@@ -1,0 +1,30 @@
+{
+  "b6230d79-2064-433f-9217-4f293cb55abc": {
+    "id": "b6230d79-2064-433f-9217-4f293cb55abc",
+    "email": "pattie_Lehner@example.com",
+    "password": "$2b$10$2NOmyUYuXXLt/SCFcbA0z.RRXWhJHxKiXARl9naCo6s.ydix.V716",
+    "role": "user",
+    "creation_date": 1715968374
+  },
+  "f851de06-ee88-45ca-9f3d-cc0b74d85d3a": {
+    "id": "f851de06-ee88-45ca-9f3d-cc0b74d85d3a",
+    "email": "meredith50@example.org",
+    "password": "$2b$10$UkiGm8bHAVsEGFof0TsAKuqyur6p4qEFXch98s1oPHiLyVWqLjX6m",
+    "role": "admin",
+    "creation_date": 1715980588
+  },
+  "50620e5d-d940-4b33-a801-70e90c618184": {
+    "id": "50620e5d-d940-4b33-a801-70e90c618184",
+    "email": "tevin.boehm@example.org",
+    "password": "$2b$10$nhF4p54sLMx/TsGaZtA46OtkFugVotcRmQTkgohwZrqBSva42fkwe",
+    "role": "user",
+    "creation_date": 1715980619
+  },
+  "c3da2baf-b6de-4a59-b43f-3aa3bc67ca82": {
+    "id": "c3da2baf-b6de-4a59-b43f-3aa3bc67ca82",
+    "email": "orie_osinski@example.com",
+    "role": "user",
+    "password": "$2b$10$DIpM4wy8eJjiy57rTzr9T.oZCqCJebHs78wkCTFdlNIsw1dm5pR56",
+    "creation_date": 1716154838
+  }
+}
