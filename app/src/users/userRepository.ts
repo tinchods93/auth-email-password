@@ -22,7 +22,7 @@ export async function getUsers() {
       throw new CustomException(
         ErrorMessagesEnum.TABLE_IS_EMPTY,
         StatusCodes.CONFLICT
-      );
+      ).handle();
     }
 
     return Users.map((User) => new ExistingUserEntity(User).get());
@@ -31,7 +31,10 @@ export async function getUsers() {
       throw error;
     }
 
-    new CustomException(error.message, StatusCodes.INTERNAL_SERVER_ERROR);
+    throw new CustomException(
+      error.message,
+      StatusCodes.INTERNAL_SERVER_ERROR
+    ).handle();
   }
 }
 
@@ -43,7 +46,7 @@ export async function getUserProfile(payload: { id: string }) {
     throw new CustomException(
       ErrorMessagesEnum.USER_NOT_FOUND,
       StatusCodes.NOT_FOUND
-    );
+    ).handle();
   }
 
   const userProfile = new ExistingUserEntity(User).get();
@@ -66,7 +69,7 @@ export async function createUser(userData) {
     throw new CustomException(
       ErrorMessagesEnum.USER_ALREADY_EXISTS,
       StatusCodes.CONFLICT
-    );
+    ).handle();
   }
 
   await Table.addItem(User.id, User);
